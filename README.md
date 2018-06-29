@@ -8,7 +8,7 @@ You will need to:
 
 2. Create classes for different types of instruments e.g. guitars, pianos, etc. (any you can think of). Each class will have its own instance variables for attributes particular to that instrument e.g. a guitar may have a number of strings, a trumpet may have a number of valves etc.
 
-3. Create an Instrument superclass which contains attributes you see as being common to all instruments e.g. material it is made from, colour, type (Brass, String, Woodwind, Keyboard etc). The classes created in step 2 above can then inherit from this Instruments class.
+3. Create an Instruments.Instrument superclass which contains attributes you see as being common to all instruments e.g. material it is made from, colour, type (Brass, String, Woodwind, Keyboard etc). The classes created in step 2 above can then inherit from this Instruments class.
 
 4. Create a ISell interface which has a calculateMarkup method, which returns an int/double, based on the buying price and the selling price.
 
@@ -19,7 +19,7 @@ You will need to:
 
   Some ISell items will be musical instruments i.e. instruments can be both IPlay and ISell.
 
-6. Create a Shop class, which has a collection of ISell items, called stock. In your shop you should be able to:
+6. Create a shop.Shop class, which has a collection of ISell items, called stock. In your shop you should be able to:
   -  add items to stock.
   -  remove items from stock.
 
