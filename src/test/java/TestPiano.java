@@ -18,4 +18,9 @@ public class TestPiano {
     public void pianoHasPedals() {
         assertEquals("Grand Feel Pedal System", piano.getPedals());
     }
+
+    @Test
+    public void pianoHasSound() {
+        assertEquals("Plink plonk", piano.sound());
+    }
 }

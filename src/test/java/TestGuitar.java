@@ -48,4 +48,9 @@ public class TestGuitar {
     public void guitarHasShape() {
         assertEquals("Mustang", guitar.getShape());
     }
+
+    @Test
+    public void guitarPlays() {
+        assertEquals("Strum strum strum", guitar.sound());
+    }
 }

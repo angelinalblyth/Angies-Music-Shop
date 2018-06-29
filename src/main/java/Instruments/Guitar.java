@@ -1,6 +1,8 @@
 package Instruments;
 
-public class Guitar extends Instrument {
+import Behaviours.IPlay;
+
+public class Guitar extends Instrument implements IPlay {
 
     private String shape;
 
@@ -12,5 +14,9 @@ public class Guitar extends Instrument {
 
     public String getShape() {
         return shape;
+    }
+
+    public String sound() {
+        return "Strum strum strum";
     }
 }
