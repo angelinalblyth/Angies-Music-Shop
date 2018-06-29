@@ -10,7 +10,7 @@ public class TestSheetMusic {
 
     @Before
     public void setUp() throws Exception {
-        sheetMusic = new SheetMusic("Faber Music", 12, 17, "Pam Wedgewood", "Piano Basics Tuition Book and CD");
+        sheetMusic = new SheetMusic("Faber Music", 12.48, 17.99, "Pam Wedgewood", "Piano Basics Tuition Book and CD");
         }
 
     @Test

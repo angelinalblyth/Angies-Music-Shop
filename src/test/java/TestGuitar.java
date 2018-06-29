@@ -11,7 +11,7 @@ public class TestGuitar {
 
     @Before
     public void setUp() throws Exception {
-        guitar = new Guitar("Fender", "Maple", "Black", InstrumentType.STRING,"Mustang", 300, 550);
+        guitar = new Guitar("Fender", "Maple", "Black", InstrumentType.STRING,"Mustang", 300.00, 550.00);
     }
 
     @Test
@@ -36,12 +36,12 @@ public class TestGuitar {
 
     @Test
     public void guitarHasBoughtPrice() {
-        assertEquals(300, guitar.getBoughtPrice());
+        assertEquals((Double)300.00, guitar.getBoughtPrice());
     }
 
     @Test
     public void guitarHasSellPrice() {
-        assertEquals(550, guitar.getSellPrice());
+        assertEquals((Double)550.00, guitar.getSellPrice());
     }
 
     @Test

@@ -8,7 +8,7 @@ public class Pick extends Accessory {
     private String weight;
 
 
-    public Pick(String brand, int boughtPrice, int sellPrice, String shape, String weight) {
+    public Pick(String brand, Double boughtPrice, Double sellPrice, String shape, String weight) {
         super(brand, boughtPrice, sellPrice);
         this.shape = shape;
         this.weight = weight;

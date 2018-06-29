@@ -1,5 +1,6 @@
 package Instruments;
 
+import Behaviours.ISell;
 import shop.Stock;
 
 public class Instrument extends Stock {
@@ -8,7 +9,7 @@ public class Instrument extends Stock {
     private String colour;
     private InstrumentType type;
 
-    public Instrument(String brand, String material, String colour, InstrumentType type, int boughtPrice, int sellPrice) {
+    public Instrument(String brand, String material, String colour, InstrumentType type, Double boughtPrice, Double sellPrice) {
         super(brand, boughtPrice, sellPrice);
         this.material = material;
         this.colour = colour;
@@ -26,6 +27,5 @@ public class Instrument extends Stock {
     public InstrumentType getType() {
         return type;
     }
-
 
 }

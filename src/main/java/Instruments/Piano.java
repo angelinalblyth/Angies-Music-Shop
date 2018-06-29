@@ -8,7 +8,7 @@ public class Piano extends Instrument implements IPlay {
 
     private String pedals;
 
-    public Piano(String brand, String material, String colour, InstrumentType type, String pedals, int boughtPrice, int sellPrice) {
+    public Piano(String brand, String material, String colour, InstrumentType type, String pedals, Double boughtPrice, Double sellPrice) {
         super(brand, material, colour, type, boughtPrice, sellPrice);
         this.pedals = pedals;
 

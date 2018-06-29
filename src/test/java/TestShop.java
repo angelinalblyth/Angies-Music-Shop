@@ -16,8 +16,8 @@ public class TestShop {
     @Before
     public void setUp() throws Exception {
         shop = new Shop();
-        guitar = new Guitar("Fender", "Maple", "Black", InstrumentType.STRING,"Mustang", 300, 550);
-        pick = new Pick("Gibson", 2, 5, "classic 351", "Medium");
+        guitar = new Guitar("Fender", "Maple", "Black", InstrumentType.STRING,"Mustang", 345.30, 550.00);
+        pick = new Pick("Gibson", 2.5, 5.0, "classic 351", "Medium");
     }
 
     @Test
@@ -43,5 +43,12 @@ public class TestShop {
         shop.addItem(pick);
         shop.removeItem(guitar);
         assertEquals(1, shop.stockLevel());
+    }
+
+    @Test
+    public void testProfit() {
+        shop.addItem(guitar);
+        shop.addItem(pick);
+        assertEquals(207.20, shop.calculateMarkup(), 0.01);
     }
 }

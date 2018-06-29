@@ -5,7 +5,7 @@ public class SheetMusic extends Accessory{
     private String author;
     private String title;
 
-    public SheetMusic(String brand, int boughtPrice, int sellPrice, String author, String title) {
+    public SheetMusic(String brand, Double boughtPrice, Double sellPrice, String author, String title) {
         super(brand, boughtPrice, sellPrice);
         this.author = author;
         this.title = title;

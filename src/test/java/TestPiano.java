@@ -11,7 +11,7 @@ public class TestPiano {
 
     @Before
     public void setUp() throws Exception {
-        piano = new Piano("Kawai ", "Rosewood", "White", InstrumentType.KEYBOARD,"Grand Feel Pedal System", 700, 900);
+        piano = new Piano("Kawai ", "Rosewood", "White", InstrumentType.KEYBOARD,"Grand Feel Pedal System", 700.00, 900.00);
         }
 
     @Test

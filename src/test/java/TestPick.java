@@ -10,7 +10,7 @@ public class TestPick {
 
     @Before
     public void setUp() throws Exception {
-        pick = new Pick("Gibson", 2, 5, "classic 351", "Medium");
+        pick = new Pick("Gibson", 2.5, 5.0, "classic 351", "Medium");
     }
 
     @Test
