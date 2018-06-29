@@ -1,6 +1,5 @@
 package Instruments;
 
-import Behaviours.ISell;
 import shop.Stock;
 
 public class Instrument extends Stock {
@@ -27,5 +26,4 @@ public class Instrument extends Stock {
     public InstrumentType getType() {
         return type;
     }
-
 }

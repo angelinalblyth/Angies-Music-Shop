@@ -31,14 +31,15 @@ public  class Shop {
 
     public void removeItem(Stock item){
         stock.remove(item);
-        }
+    }
 
-        public double calculateMarkup(){
+
+    public double calculateMarkup(){
         double totalProfit = 0;
-            for(Stock item: stock){
-               totalProfit += item.getSellPrice() - item.getBoughtPrice() ;
-            }
-            return totalProfit;
+        for(Stock item: stock){
+            totalProfit += item.calculateMarkup();
         }
+        return totalProfit;
+    }
 
 }

@@ -1,6 +1,8 @@
 package shop;
 
-public abstract class Stock {
+import Behaviours.ISell;
+
+public abstract class Stock implements ISell {
 
     private String brand;
     private Double boughtPrice;
@@ -22,5 +24,9 @@ public abstract class Stock {
 
     public String getBrand() {
         return brand;
+    }
+
+    public Double calculateMarkup() {
+        return(getSellPrice() - getBoughtPrice());
     }
 }

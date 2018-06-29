@@ -19,4 +19,5 @@ public class Guitar extends Instrument implements IPlay {
     public String sound() {
         return "Strum strum strum";
     }
+
 }
