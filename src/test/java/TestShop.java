@@ -49,6 +49,6 @@ public class TestShop {
     public void testProfit() {
         shop.addItem(guitar);
         shop.addItem(pick);
-        assertEquals(207.20, shop.calculateMarkup(), 0.01);
+        assertEquals(207.20, shop.calculateProfit(), 0.01);
     }
 }
